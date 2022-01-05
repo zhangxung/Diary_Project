@@ -11,6 +11,7 @@
         android:theme="@style/Theme.Diary">
         <activity
             android:name=".diary_add"
+            android:label="@string/add_diary"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
