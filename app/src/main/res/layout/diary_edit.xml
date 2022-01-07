@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/background1"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/background1">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/topic"
@@ -41,7 +42,7 @@
         android:id="@+id/sel_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="285dp"
+        android:layout_marginLeft="268dp"
         android:layout_marginTop="68dp"
         android:background="@drawable/button_rounde"
         android:text="選擇時間"
@@ -76,10 +77,21 @@
         android:id="@+id/add_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="285dp"
+        android:layout_marginLeft="270dp"
         android:layout_marginTop="650dp"
         android:background="@drawable/button_rounde"
         android:text="儲存日記"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="650dp"
+        android:background="@drawable/button_rounde"
+        android:text="刪除日記"
         android:textColor="#000000"
         android:textSize="18sp" />
 
