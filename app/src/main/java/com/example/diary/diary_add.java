@@ -1,7 +1,6 @@
 package com.example.diary;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.DatePickerDialog;
 import android.content.ContentValues;
 import android.content.Context;
@@ -19,7 +18,6 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import java.util.ArrayList;
 import java.util.Calendar;
 
@@ -40,7 +38,7 @@ public class diary_add extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Log.d(LOG_TAG_d,"MainActivity.onCreate");
         //設定連接的介面佈局檔
-        setContentView(R.layout.activity_diary_add);
+        setContentView(R.layout.diary_add);
         //連結介面元件
         result_date=(TextView) findViewById(R.id.result_date);
         diary_content=(EditText) findViewById(R.id.diary_content);
@@ -77,10 +75,8 @@ public class diary_add extends AppCompatActivity {
                 //回到主畫面-我的日記
                 intent_back=new Intent(diary_add.this,MainActivity.class);
                 startActivity(intent_back);
-
             }
         });
-
     }
     private void add_diary(String topic_diary,String date_diary,String content_diary){
         /*

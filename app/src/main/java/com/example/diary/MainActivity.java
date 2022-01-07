@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d(LOG_TAG,"MainActivity.onCreate");
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.diary_main);
         diary_add=(Button)findViewById(R.id.add_diary);
         Button toadd_diary=(Button) findViewById(R.id.add_diary);
         toadd_diary.setOnClickListener(new View.OnClickListener() {
@@ -31,10 +31,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 intent_toadd=new Intent(MainActivity.this,diary_add.class);
                 startActivity(intent_toadd);
-
             }
         });
-
     }
     @Override
     protected void onStart() {
