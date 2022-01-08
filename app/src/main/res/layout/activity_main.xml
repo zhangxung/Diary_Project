@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/diary_list"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="16dp">
+
+    </ListView>
+
+    <Button
+            android:id="@+id/add_diary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="270dp"
+            android:layout_marginTop="520dp"
+            android:text="@string/add_diary"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/exit_button"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="520dp"
+            android:layout_width="wrap_content"
+            android:text="@string/exit_diary"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <!--
+    android:background="@drawable/button_rounde"
+    android:textColor="#000000"
+    -->
+    <!--
+     android:background="@drawable/button_rounde"
+     android:textColor="#000000"
+    -->
+
+</RelativeLayout>

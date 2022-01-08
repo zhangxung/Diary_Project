@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".diary_edit">
+    <!--
+       顯示-主題:
+        -->
+    <TextView
+        android:id="@+id/topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/topic"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+    <!--
+       編輯我的日記主題
+       從java檔中給予text
+        -->
+    <EditText
+        android:id="@+id/diary_topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="18dp"
+        android:inputType="textMultiLine"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+    <!--
+       編輯我的日記日期
+       從java檔中給予text
+        -->
+    <TextView
+        android:id="@+id/result_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="80dp"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+    <!--
+    選擇設定日期按鈕:
+    -->
+    <Button
+        android:id="@+id/sel_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="268dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/button_rounde"
+        android:text="選擇時間"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+    <!--
+       顯示-內容:
+        -->
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="130dp"
+        android:text="@string/content"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+    <!--
+       編輯日記內容:
+        -->
+    <EditText
+        android:id="@+id/diary_content"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="150dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+    <!--
+       再次儲存內容、更新內容按鈕:
+        -->
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="650dp"
+        android:background="@drawable/button_rounde"
+        android:text="@string/save_diary"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+    <!--
+       刪除整篇內容按鈕:
+        -->
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="650dp"
+        android:background="@drawable/button_rounde"
+        android:text="@string/delete_diary"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+</RelativeLayout>
