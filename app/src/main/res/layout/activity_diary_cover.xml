@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".diary_cover">
+    <!--
+       點選畫面可進入到日記本中按鈕
+        -->
+    <Button
+        android:id="@+id/enter_diary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:fontFamily="serif"
+        android:text="@string/Click"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <!--
+       顯示My diary
+        -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="200dp"
+        android:fontFamily="casual"
+        android:text="@string/my_diary"
+        android:textColor="#000000"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+</RelativeLayout>
