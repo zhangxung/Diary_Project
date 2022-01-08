@@ -43,6 +43,5 @@ dependencies {
     })
     implementation 'androidx.appcompat:appcompat:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.0.2'
-    implementation project(':easyclass');
     testImplementation 'junit:junit:4.12'
 }

@@ -1,28 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/background1"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".diary_edit">
 
     <TextView
         android:id="@+id/topic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
-        android:text="主題 : "
+        android:text="@string/topic"
         android:textColor="#000000"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:textStyle="bold" />
 
     <EditText
         android:id="@+id/diary_topic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="80dp"
+        android:layout_marginStart="80dp"
         android:layout_marginTop="18dp"
-        android:hint="(輸入主題)"
+        android:hint="@string/set_topic"
         android:inputType="textMultiLine"
         android:textColor="#000000"
         android:textStyle="bold" />
@@ -31,44 +34,44 @@
         android:id="@+id/result_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="80dp"
-        android:text="時間 : ____ 年 __ 月 __ 日"
+        android:text="@string/date"
         android:textColor="#000000"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:textStyle="bold" />
 
     <Button
         android:id="@+id/sel_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="268dp"
+        android:layout_marginStart="268dp"
         android:layout_marginTop="68dp"
-        android:background="@drawable/button_rounde"
-        android:text="選擇時間"
+        android:background="@drawable/button_round"
+        android:text="@string/sel_date"
         android:textColor="#000000"
-        android:textSize="18dp" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="130dp"
-        android:text="內容 : "
+        android:text="@string/content"
         android:textColor="#000000"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:textStyle="bold" />
 
     <EditText
         android:id="@+id/diary_content"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="150dp"
         android:ems="10"
         android:gravity="start|top"
-        android:hint="(輸入內容)"
+        android:hint="@string/enter_content"
         android:inputType="textMultiLine"
         android:textColor="#000000"
         android:textStyle="bold" />
@@ -77,10 +80,10 @@
         android:id="@+id/add_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="270dp"
+        android:layout_marginStart="270dp"
         android:layout_marginTop="650dp"
-        android:background="@drawable/button_rounde"
-        android:text="儲存日記"
+        android:background="@drawable/button_round"
+        android:text="@string/save_diary"
         android:textColor="#000000"
         android:textSize="18sp" />
 
@@ -88,10 +91,10 @@
         android:id="@+id/delete_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="650dp"
-        android:background="@drawable/button_rounde"
-        android:text="刪除日記"
+        android:background="@drawable/button_round"
+        android:text="@string/delete_diary"
         android:textColor="#000000"
         android:textSize="18sp" />
 

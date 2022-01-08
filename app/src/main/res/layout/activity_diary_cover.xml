@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background1">
+    android:background="@drawable/background1"
+    tools:context=".diary_cover">
 
     <Button
-        android:id="@+id/add_diary"
+        android:id="@+id/enter_diary"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#00000000"
         android:fontFamily="serif"
-        android:text="Click to enter"
+        android:text="@string/Click"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="18sp"
@@ -21,11 +24,11 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="105dp"
+        android:layout_marginStart="105dp"
         android:layout_marginTop="200dp"
         android:fontFamily="casual"
-        android:text="My Diary"
+        android:text="@string/my_diary"
         android:textColor="#000000"
-        android:textSize="50dp"
+        android:textSize="50sp"
         android:textStyle="bold" />
 </RelativeLayout>

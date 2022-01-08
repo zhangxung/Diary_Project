@@ -36,7 +36,7 @@ public class diary_add extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d(LOG_TAG_d,"MainActivity.onCreate");
+        Log.d(LOG_TAG_d,"diary_add.onCreate");
         //設定連接的介面佈局檔
         setContentView(R.layout.activity_diary_add);
         //連結介面元件
@@ -50,7 +50,7 @@ public class diary_add extends AppCompatActivity {
         sel_date.setOnClickListener(sel_dateOnClick);
         //開啟或建立資料庫
         mydiary=openOrCreateDatabase(db_name, Context.MODE_PRIVATE,null);
-        String createTable="CREATE TABLE myTable(topic text PRIMARY KEY ,date text NOT NULL,content text NOT NULL)";
+        String createTable="CREATE TABLE myTable(_id integer PRIMARY KEY,topic text NOT NULL ,date text NOT NULL,content text NOT NULL)";
         mydiary.execSQL(createTable);
         //儲存按鈕監聽
         btn_save.setOnClickListener(new View.OnClickListener() {
@@ -66,7 +66,7 @@ public class diary_add extends AppCompatActivity {
                         add_diary(diary_topic.getText().toString(),result_date.getText().toString(),diary_content.getText().toString());
                         //清空輸入
                         diary_topic.setText("");
-                        result_date.setText("日記時間:____年__月__日");
+                        result_date.setText("日記時間 : ____ 年 __ 月 __ 日");
                         diary_content.setText("");
                     }catch (Exception e){
                         Toast.makeText(diary_add.this, "儲存失敗:"+e.toString(), Toast.LENGTH_LONG).show();

@@ -9,28 +9,35 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
-
 import java.io.Serializable;
 
 public class MainActivity extends AppCompatActivity {
     //定義生命週期Tag標籤
     private static final String LOG_TAG="ActivityLifeCycle";
-    private Button diary_add;
+    private Button add_diary, exit_diary;
     //宣告前往新增日記頁面
-    public Intent intent_toadd;
+    public Intent intent_toadd,intent_back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d(LOG_TAG,"MainActivity.onCreate");
         setContentView(R.layout.activity_main);
-        diary_add=(Button)findViewById(R.id.add_diary);
-        Button toadd_diary=(Button) findViewById(R.id.add_diary);
-        toadd_diary.setOnClickListener(new View.OnClickListener() {
+        add_diary=(Button)findViewById(R.id.add_diary);
+        exit_diary=(Button)findViewById(R.id.exit_button);
+
+        add_diary.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
                 intent_toadd=new Intent(MainActivity.this,diary_add.class);
                 startActivity(intent_toadd);
+            }
+        });
+        exit_diary.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent_back=new Intent(MainActivity.this,diary_cover.class);
+                startActivity(intent_back);
             }
         });
     }
