@@ -1,6 +1,7 @@
 package com.example.diary;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.app.DatePickerDialog;
 import android.content.ContentValues;
 import android.content.Context;
@@ -18,6 +19,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import java.util.ArrayList;
 import java.util.Calendar;
 
@@ -36,9 +38,9 @@ public class diary_add extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d(LOG_TAG_d,"MainActivity.onCreate");
+        Log.d(LOG_TAG_d,"diary_add.onCreate");
         //設定連接的介面佈局檔
-        setContentView(R.layout.diary_add);
+        setContentView(R.layout.activity_diary_add);
         //連結介面元件
         result_date=(TextView) findViewById(R.id.result_date);
         diary_content=(EditText) findViewById(R.id.diary_content);
@@ -50,7 +52,7 @@ public class diary_add extends AppCompatActivity {
         sel_date.setOnClickListener(sel_dateOnClick);
         //開啟或建立資料庫
         mydiary=openOrCreateDatabase(db_name, Context.MODE_PRIVATE,null);
-        String createTable="CREATE TABLE myTable(topic text PRIMARY KEY ,date text NOT NULL,content text NOT NULL)";
+        String createTable="CREATE TABLE myTable(_id integer PRIMARY KEY,topic text NOT NULL ,date text NOT NULL,content text NOT NULL)";
         mydiary.execSQL(createTable);
         //儲存按鈕監聽
         btn_save.setOnClickListener(new View.OnClickListener() {
@@ -75,8 +77,10 @@ public class diary_add extends AppCompatActivity {
                 //回到主畫面-我的日記
                 intent_back=new Intent(diary_add.this,MainActivity.class);
                 startActivity(intent_back);
+
             }
         });
+
     }
     private void add_diary(String topic_diary,String date_diary,String content_diary){
         /*
@@ -117,38 +121,38 @@ public class diary_add extends AppCompatActivity {
     @Override
     public void onDestroy(){
         super.onDestroy();
-        Log.d(LOG_TAG_d,"MainActivity.onDestroy");
+        Log.d(LOG_TAG_d,"diary_add.onDestroy");
         mydiary.close();
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        Log.d(LOG_TAG_d,"MainActivity.onStart");
+        Log.d(LOG_TAG_d,"diary_add.onStart");
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        Log.d(LOG_TAG_d,"MainActivity.onStop");
+        Log.d(LOG_TAG_d,"diary_add.onStop");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        Log.d(LOG_TAG_d,"MainActivity.onPause");
+        Log.d(LOG_TAG_d,"diary_add.onPause");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        Log.d(LOG_TAG_d,"MainActivity.onResume");
+        Log.d(LOG_TAG_d,"diary_add.onResume");
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
-        Log.d(LOG_TAG_d,"MainActivity.onRestart");
+        Log.d(LOG_TAG_d,"diary_add.onRestart");
     }
 }
 

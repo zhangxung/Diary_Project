@@ -15,24 +15,37 @@ import java.io.Serializable;
 public class MainActivity extends AppCompatActivity {
     //定義生命週期Tag標籤
     private static final String LOG_TAG="ActivityLifeCycle";
-    private Button diary_add;
+    private Button add_diary,exit_diary;
     //宣告前往新增日記頁面
-    public Intent intent_toadd;
+    public Intent intent_toadd,intent_back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d(LOG_TAG,"MainActivity.onCreate");
-        setContentView(R.layout.diary_main);
-        diary_add=(Button)findViewById(R.id.add_diary);
+        setContentView(R.layout.activity_main);
+        add_diary=(Button)findViewById(R.id.add_diary);
+        exit_diary=(Button)findViewById(R.id.exit_button);
+        /*
         Button toadd_diary=(Button) findViewById(R.id.add_diary);
-        toadd_diary.setOnClickListener(new View.OnClickListener() {
-
+        Button back_cover=(Button)findViewById(R.id.exit_button);
+         */
+        //點擊新增日記按鈕
+        add_diary.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 intent_toadd=new Intent(MainActivity.this,diary_add.class);
                 startActivity(intent_toadd);
             }
         });
+        //點擊離開主畫面(我的日記)
+        exit_diary.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent_back=new Intent(MainActivity.this,diary_cover.class);
+                startActivity(intent_back);
+            }
+        });
+
     }
     @Override
     protected void onStart() {
