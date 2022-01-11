@@ -20,6 +20,7 @@
 
     <!--activity_diary_edit.xml檔案中的字串-->
     <string name="delete_diary">刪除日記</string>
+    <string name="update_diary">更新日記</string>
 
     <!--AndroidManifest.xml檔案中的字串-->
     <string name="edit_diary">編輯日記</string>

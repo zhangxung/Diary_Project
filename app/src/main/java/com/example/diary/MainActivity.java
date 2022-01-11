@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
@@ -100,12 +101,12 @@ public class MainActivity extends AppCompatActivity {
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
         //取得按下ListView的那個Item的值。
-        TextView txtid = (TextView) view.findViewById(android.R.id.text1);
+        TextView _id = (TextView) view.findViewById(android.R.id.text1);
 
         //按下Item時，要呼叫編輯的Activity，利用Intent物件帶參數過去。
         Intent it = new Intent(this, diary_edit.class);
 
-        it.putExtra("pid", txtid.getText().toString());
+        it.putExtra("pid", _id.getText().toString());
 
         startActivity(it);
 
@@ -114,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
         this.finish();
     }
 
-    public void btnback(View v) {
+    public void btnBack(View v) {
         //按下新增時，要呼叫新增的Activity，利用Intent物件。
         Intent it = new Intent(this, diary_cover.class);
 
@@ -124,7 +125,6 @@ public class MainActivity extends AppCompatActivity {
         db.close();
         this.finish();
     }
-
 }
 
 

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="40dp"
+        android:layout_height="70dp">
+        <TextView
+            android:text="11"
+            android:id="@+id/Id"
+            android:layout_width="30dp"
+            android:layout_height="70dp"
+            android:maxLines="1"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+    <TextView
+        android:text="主題"
+        android:id="@+id/topic"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:ellipsize="end" />
+    <TextView
+        android:text="時間"
+        android:id="@+id/result_date"
+        android:textSize="15sp"
+        android:lines="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
