@@ -10,28 +10,27 @@
     <ListView
         android:id="@+id/diary_list"
         android:layout_width="match_parent"
-        android:layout_height="600dp"
+        android:layout_height="500dp"
         tools:layout_editor_absoluteX="76dp"
-        tools:layout_editor_absoluteY="16dp">
-    </ListView>
+        tools:layout_editor_absoluteY="16dp" />
     <Button
         android:id="@+id/add_diary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="270dp"
-        android:layout_marginTop="650dp"
-
+        android:layout_marginTop="520dp"
+        android:background="@drawable/button_round"
         android:text="@string/add_diary"
-
+        android:onClick="btnAdd"
         android:textSize="18sp" />
     <Button
         android:id="@+id/exit_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="650dp"
-
+        android:layout_marginTop="520dp"
+        android:background="@drawable/button_round"
+        android:onClick="btnback"
         android:text="@string/exit_diary"
-
         android:textSize="18sp" />
 </RelativeLayout>

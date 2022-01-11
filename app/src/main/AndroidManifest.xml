@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.diary">
-
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -21,14 +19,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".diary_add"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/add_diary" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
+            android:exported="true">
         </activity>
+        <activity
+            android:name=".diary_edit"
+            android:exported="true"
+            android:label="編輯日記" />
     </application>
 </manifest>
