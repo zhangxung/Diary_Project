@@ -90,16 +90,17 @@
         android:textColor="#000000"
         android:background="@drawable/button_round"
         android:textSize="18sp" />
+
     <Button
-        android:id="@+id/delete_button"
+        android:id="@+id/can_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginTop="520dp"
-        android:onClick="btnCancel"
-        android:text="@string/delete_diary"
-        android:textColor="#000000"
         android:background="@drawable/button_round"
+        android:onClick="btnCancel"
+        android:text="@string/cancel_diary"
+        android:textColor="#000000"
         android:textSize="18sp" />
     <TextView
         android:id="@+id/Id"

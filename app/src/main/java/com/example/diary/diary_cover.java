@@ -20,7 +20,6 @@ public class diary_cover extends AppCompatActivity {
         setContentView(R.layout.activity_diary_cover);
         //連結介面元件
         btn_enter=(Button) findViewById(R.id.enter_diary);
-
         btn_enter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -28,34 +27,5 @@ public class diary_cover extends AppCompatActivity {
                 startActivity(intent_enter);
             }
         });
-    }
-    @Override
-    protected void onStart() {
-        super.onStart();
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    protected void onRestart() {
-        super.onRestart();
     }
 }
