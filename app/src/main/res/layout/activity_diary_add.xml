@@ -1,20 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+=======
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+>>>>>>> origin/108360112
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     android:background="@drawable/background1"
     tools:context=".diary_add"
     >
     <!--
     顯示-主題:
     -->
+=======
+    android:orientation="vertical"
+    tools:context=".diary_add">
+
+
+    <TextView
+        android:id="@+id/tv_topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Topic : " />
+
+    <EditText
+        android:id="@+id/ed_topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+>>>>>>> origin/108360112
     <TextView
         android:id="@+id/topic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginLeft="30dp"
         android:layout_marginTop="30dp"
         android:text="@string/topic"
@@ -24,10 +51,16 @@
     <!--
     編輯主題
     -->
+=======
+        android:layout_weight="1"
+        android:text="Date : " />
+
+>>>>>>> origin/108360112
     <EditText
         android:id="@+id/diary_topic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginLeft="80dp"
         android:layout_marginTop="18dp"
         android:inputType="textMultiLine"
@@ -105,3 +138,41 @@
         android:background="@drawable/button_rounde" />
 
 </RelativeLayout>
+=======
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Content : " />
+
+    <EditText
+        android:id="@+id/ed_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="prc_btnsave"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="prc_cancel"
+        android:text="Cancel" />
+
+</LinearLayout>
+>>>>>>> origin/108360112

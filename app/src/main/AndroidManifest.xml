@@ -13,8 +13,15 @@
 
         <activity
             android:name=".diary_edit"
+<<<<<<< HEAD
             android:exported="true"
             android:label="@string/edit_diary"/>
+=======
+            android:exported="false" />
+        <activity
+            android:name=".diary_add"
+            android:exported="false" />
+>>>>>>> origin/108360112
         <activity
             android:name=".diary_cover"
             android:exported="true">

@@ -2,6 +2,7 @@ package com.example.diary;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+<<<<<<< HEAD
 import android.app.DatePickerDialog;
 import android.content.ContentValues;
 import android.content.Context;
@@ -19,10 +20,19 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+=======
+import android.content.Context;
+import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+>>>>>>> origin/108360112
 
 import java.util.ArrayList;
 import java.util.Calendar;
 
+<<<<<<< HEAD
 public class diary_add extends AppCompatActivity {
     private static final String LOG_TAG_d="diary_addLifeCycle";
     //宣告資料庫名稱及資料表名稱
@@ -35,12 +45,21 @@ public class diary_add extends AppCompatActivity {
     private ListView listView; //日記列表
     private Button btn_save,sel_date;  //儲存日記按鈕及設定日期按鈕
     public Intent intent_back; //建立回我的日記的頁面
+=======
+    //宣告物件
+    private SQLiteDatabase db = null;
+    private EditText txt_topic;
+    private EditText txt_date;
+    private EditText txt_content;
+
+>>>>>>> origin/108360112
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d(LOG_TAG_d,"diary_add.onCreate");
         //設定連接的介面佈局檔
         setContentView(R.layout.activity_diary_add);
+<<<<<<< HEAD
         //連結介面元件
         result_date=(TextView) findViewById(R.id.result_date);
         diary_content=(EditText) findViewById(R.id.diary_content);
@@ -129,6 +148,51 @@ public class diary_add extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         Log.d(LOG_TAG_d,"diary_add.onStart");
+=======
+
+        txt_topic = (EditText)findViewById(R.id.ed_topic);
+        txt_date = (EditText)findViewById(R.id.ed_date);
+        txt_content = (EditText)findViewById(R.id.ed_content);
+
+        //建立SQLite 資料庫的實體檔案
+        db = openOrCreateDatabase("data.db", Context.MODE_PRIVATE,null);
+
+        //建立資料表的SQL語法
+        String strcreatedb = "CREATE TABLE IF NOT EXISTS " +
+                "mytable (_id INTEGER PRIMARY KEY, topic TEXT, date TEXT, content TEXT) ";
+
+        //執行SQL語法，建立資料表
+        db.execSQL(strcreatedb);
+    }
+
+    public void prc_btnsave(View v)
+    {
+        String strinsertsql = "INSERT INTO mytable (topic,date,content) values " +
+                "('" + txt_topic.getText().toString() + "','" + txt_date.getText().toString() + "','" + txt_content.getText().toString() + "')";
+
+        db.execSQL(strinsertsql);
+
+        //完成新增後，要呼叫列表的Activity，利用Intent物件。
+        Intent it = new Intent(this,MainActivity.class);
+
+        startActivity(it);
+
+        //關閉本身的Activity。
+        db.close();
+        this.finish();
+    }
+
+    public void prc_cancel(View v)
+    {
+        //按下「取消」，就呼叫列表的Activity，利用Intent物件。
+        Intent it = new Intent(this,MainActivity.class);
+
+        startActivity(it);
+
+        //關閉本身的Activity。
+        db.close();
+        this.finish();
+>>>>>>> origin/108360112
     }
 
     @Override
