@@ -1,70 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.diary">
-<<<<<<< HEAD
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-=======
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
->>>>>>> origin/108360116
     <application
-        android:allowbackup="true"
+        android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/my_diary"
+        android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-<<<<<<< HEAD
-        android:theme="@style/Theme.Diary">
-
-        <activity
-            android:name=".diary_edit"
-<<<<<<< HEAD
-            android:exported="true"
-            android:label="@string/edit_diary"/>
-=======
-            android:exported="false" />
-        <activity
-            android:name=".diary_add"
-            android:exported="false" />
->>>>>>> origin/108360112
-        <activity
-            android:name=".diary_cover"
-            android:exported="true">
-            <!-- 將此設定為初始畫面 -->
-=======
         android:theme="@style/Theme.Diary" >
         <activity
             android:name=".diary_cover"
             android:exported="true" >
             <!-- 將此設定為初始畫面-->
->>>>>>> origin/108360116
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/108360116
         <activity
             android:name=".diary_add"
             android:exported="true"
             android:label="@string/add_diary" />
         <activity
             android:name=".MainActivity"
-<<<<<<< HEAD
-            android:exported="true"
-            android:label="@string/app_name">
-        </activity>
-
-=======
             android:exported="true">
         </activity>
         <activity
             android:name=".diary_edit"
             android:exported="true"
             android:label="編輯日記" />
->>>>>>> origin/108360116
     </application>
 </manifest>

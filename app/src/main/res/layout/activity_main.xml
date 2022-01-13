@@ -1,87 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<RelativeLayout
-    xmlns="http://schemas.android.com/apk/res/android"
-=======
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
->>>>>>> origin/108360112
-=======
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
->>>>>>> origin/108360116
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
-<<<<<<< HEAD
     android:background="@drawable/background1"
     tools:context=".MainActivity">
-
-=======
-    android:background="@drawable/background1"
-    tools:context=".MainActivity">
->>>>>>> origin/108360116
     <ListView
         android:id="@+id/diary_list"
         android:layout_width="match_parent"
         android:layout_height="500dp"
         tools:layout_editor_absoluteX="76dp"
-<<<<<<< HEAD
-        tools:layout_editor_absoluteY="16dp">
-
-    </ListView>
-
-    <Button
-            android:id="@+id/add_diary"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="270dp"
-            android:layout_marginTop="520dp"
-            android:text="@string/add_diary"
-            android:textSize="18sp" />
-
-        <Button
-            android:id="@+id/exit_button"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="520dp"
-            android:layout_width="wrap_content"
-            android:text="@string/exit_diary"
-            android:textSize="18sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-    <!--
-    android:background="@drawable/button_rounde"
-    android:textColor="#000000"
-    -->
-    <!--
-     android:background="@drawable/button_rounde"
-     android:textColor="#000000"
-    -->
-
-</RelativeLayout>
-=======
-    android:orientation="vertical"
-    tools:context=".MainActivity">
-
-    <Button
-        android:id="@+id/btn_add"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ADD"
-        android:onClick="prc_btnadd"/>
-
-    <ListView
-        android:id="@+id/list"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-</LinearLayout>
->>>>>>> origin/108360112
-=======
         tools:layout_editor_absoluteY="16dp" />
     <Button
         android:id="@+id/add_diary"
@@ -104,4 +34,3 @@
         android:text="@string/exit_diary"
         android:textSize="18sp" />
 </RelativeLayout>
->>>>>>> origin/108360116

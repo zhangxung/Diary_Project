@@ -1,22 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-=======
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
->>>>>>> origin/108360112
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-<<<<<<< HEAD
-    android:background="@drawable/background1"
-    tools:context=".diary_edit">
-    <!--
-       顯示-主題:
-        -->
-=======
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -25,45 +7,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".diary_edit">
->>>>>>> origin/108360116
     <TextView
         android:id="@+id/topic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
-        android:text="@string/topic"
-        android:textColor="#000000"
-        android:textSize="18dp"
-        android:textStyle="bold" />
-    <!--
-       編輯我的日記主題
-       從java檔中給予text
-        -->
-=======
         android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
         android:text="@string/topic"
         android:textColor="#000000"
         android:textSize="18sp"
         android:textStyle="bold" />
->>>>>>> origin/108360116
     <EditText
         android:id="@+id/diary_topic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="18dp"
-        android:inputType="textMultiLine"
-        android:textColor="#000000"
-        android:textStyle="bold" />
-    <!--
-       編輯我的日記日期
-       從java檔中給予text
-        -->
-=======
         android:layout_marginStart="80dp"
         android:layout_marginTop="18dp"
         android:hint="@string/set_topic"
@@ -80,88 +37,40 @@
         android:textColor="#000000"
         android:textSize="18sp"
         android:textStyle="bold" />
->>>>>>> origin/108360116
     <TextView
         android:id="@+id/result_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="80dp"
-        android:textColor="#000000"
-        android:textSize="18dp"
-        android:textStyle="bold" />
-    <!--
-    選擇設定日期按鈕:
-    -->
-=======
         android:layout_marginStart="80dp"
         android:layout_marginTop="80dp"
         android:text="@string/date"
         android:textColor="#000000"
         android:textSize="18sp"
         android:textStyle="bold" />
->>>>>>> origin/108360116
     <Button
         android:id="@+id/sel_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
-        android:layout_marginLeft="268dp"
-        android:layout_marginTop="68dp"
-        android:background="@drawable/button_rounde"
-        android:text="選擇時間"
-        android:textColor="#000000"
-        android:textSize="18dp" />
-    <!--
-       顯示-內容:
-        -->
-=======
         android:layout_marginStart="268dp"
         android:layout_marginTop="68dp"
         android:text="@string/sel_date"
         android:textColor="#000000"
         android:background="@drawable/button_round"
         android:textSize="18sp" />
->>>>>>> origin/108360116
     <TextView
         android:id="@+id/content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="130dp"
-        android:text="@string/content"
-        android:textColor="#000000"
-        android:textSize="18dp"
-        android:textStyle="bold" />
-    <!--
-       編輯日記內容:
-        -->
-=======
         android:layout_marginStart="30dp"
         android:layout_marginTop="130dp"
         android:text="@string/content"
         android:textColor="#000000"
         android:textSize="18sp"
         android:textStyle="bold" />
->>>>>>> origin/108360116
     <EditText
         android:id="@+id/diary_content"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="150dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        android:textColor="#000000"
-        android:textStyle="bold" />
-    <!--
-       再次儲存內容、更新內容按鈕:
-        -->
-=======
         android:layout_marginStart="30dp"
         android:layout_marginTop="150dp"
         android:ems="10"
@@ -170,100 +79,10 @@
         android:inputType="textMultiLine"
         android:textColor="#000000"
         android:textStyle="bold" />
->>>>>>> origin/108360116
     <Button
         android:id="@+id/add_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
-        android:layout_marginLeft="270dp"
-        android:layout_marginTop="650dp"
-        android:background="@drawable/button_rounde"
-        android:text="@string/save_diary"
-        android:textColor="#000000"
-        android:textSize="18sp" />
-    <!--
-       刪除整篇內容按鈕:
-        -->
-    <Button
-        android:id="@+id/delete_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="650dp"
-        android:background="@drawable/button_rounde"
-        android:text="@string/delete_diary"
-        android:textColor="#000000"
-        android:textSize="18sp" />
-</RelativeLayout>
-=======
-    android:orientation="vertical"
-    tools:context=".diary_edit">
-
-    <TextView
-        android:id="@+id/tv_topic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Topic : " />
-
-    <EditText
-        android:id="@+id/ed_topic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:ems="10"
-        android:inputType="textPersonName" />
-
-    <TextView
-        android:id="@+id/tv_date"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Date : " />
-
-    <EditText
-        android:id="@+id/ed_date"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:ems="10"
-        android:inputType="textPersonName" />
-
-    <TextView
-        android:id="@+id/tv_content"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Content : " />
-
-    <EditText
-        android:id="@+id/ed_content"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:ems="10"
-        android:inputType="textPersonName" />
-
-    <Button
-        android:id="@+id/btn_update"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:onClick="prc_btnupdate"
-        android:text="Update" />
-
-    <Button
-        android:id="@+id/btn_cancel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:onClick="prc_cancel"
-        android:text="Cancel" />
-
-    <TextView
-        android:id="@+id/lblid"
-=======
         android:layout_marginStart="270dp"
         android:layout_marginTop="520dp"
         android:text="@string/update_diary"
@@ -285,15 +104,8 @@
         android:textSize="18sp" />
     <TextView
         android:id="@+id/Id"
->>>>>>> origin/108360116
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
         android:visibility="invisible" />
-<<<<<<< HEAD
-
-</LinearLayout>
->>>>>>> origin/108360112
-=======
 </RelativeLayout>
->>>>>>> origin/108360116
