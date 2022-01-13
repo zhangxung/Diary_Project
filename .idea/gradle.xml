@@ -10,6 +10,11 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+<<<<<<< HEAD
+=======
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/easyclass" />
+>>>>>>> origin/108360116
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

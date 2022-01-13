@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< HEAD
         <entry key="..\:/Users/USER/AndroidStudioProjects/Diary/app/src/main/res/layout/activity_diary_add.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/Diary/app/src/main/res/layout/activity_diary_edit.xml" value="0.25364583333333335" />
 <<<<<<< HEAD
@@ -11,6 +12,8 @@
         <entry key="..\:/Users/USER/Desktop/Diary_Project/app/src/main/res/layout/activity_main.xml" value="0.22" />
          =======
 >>>>>>> origin/108360112
+=======
+>>>>>>> origin/108360116
       </map>
     </option>
   </component>

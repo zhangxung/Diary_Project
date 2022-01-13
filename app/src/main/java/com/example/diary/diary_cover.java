@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+<<<<<<< HEAD
 /*
 此為封面頁
 點選畫面可以進入日記本內
@@ -17,6 +18,11 @@ public class diary_cover extends AppCompatActivity {
     private static final String LOG_TAG_c="diary_addLifeCycle";
     //連結介面元件參數宣告
     private Button btn_enter,btn_back;
+=======
+public class diary_cover extends AppCompatActivity {
+    private static final String LOG_TAG_c="diary_addLifeCycle";
+    private Button btn_enter, btn_back;
+>>>>>>> origin/108360116
     public Intent intent_enter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +32,10 @@ public class diary_cover extends AppCompatActivity {
         setContentView(R.layout.activity_diary_cover);
         //連結介面元件
         btn_enter=(Button) findViewById(R.id.enter_diary);
+<<<<<<< HEAD
         //點擊進入主畫面(我的日記本)
+=======
+>>>>>>> origin/108360116
         btn_enter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -35,6 +44,7 @@ public class diary_cover extends AppCompatActivity {
             }
         });
     }
+<<<<<<< HEAD
 
     @Override
     protected void onStart() {
@@ -65,4 +75,6 @@ public class diary_cover extends AppCompatActivity {
     protected void onRestart() {
         super.onRestart();
     }
+=======
+>>>>>>> origin/108360116
 }

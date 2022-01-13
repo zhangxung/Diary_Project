@@ -7,9 +7,13 @@
     android:layout_height="match_parent"
     android:background="@drawable/background1"
     tools:context=".diary_cover">
+<<<<<<< HEAD
     <!--
        點選畫面可進入到日記本中按鈕
         -->
+=======
+
+>>>>>>> origin/108360116
     <Button
         android:id="@+id/enter_diary"
         android:layout_width="match_parent"
@@ -21,18 +25,32 @@
         android:textColor="#000000"
         android:textSize="18sp"
         android:textStyle="bold" />
+<<<<<<< HEAD
     <!--
        顯示My diary
         -->
+=======
+
+>>>>>>> origin/108360116
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginLeft="105dp"
+=======
+        android:layout_marginStart="105dp"
+>>>>>>> origin/108360116
         android:layout_marginTop="200dp"
         android:fontFamily="casual"
         android:text="@string/my_diary"
         android:textColor="#000000"
+<<<<<<< HEAD
         android:textSize="50dp"
         android:textStyle="bold" />
 </RelativeLayout>
+=======
+        android:textSize="50sp"
+        android:textStyle="bold" />
+</RelativeLayout>
+>>>>>>> origin/108360116
